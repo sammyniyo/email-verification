@@ -116,8 +116,17 @@ body {
 }
 
 /* Active focus & valid field color */
-.form__input:focus {
+.form__input:focus,
+.valid .form__input {
   border-color: var(--active-color);
   box-shadow: 0 8px 24px hsla(200, 70%, 56%, 0.3);
 }
 /* Invalid field color */
+
+.invalid .form__input {
+  border-color: var(--error-color);
+  box-shadow: 0 8px 24px hsla(353, 64%, 53%, 0.3);
+}
+.invalid .form__error {
+  opacity: 1;
+}
